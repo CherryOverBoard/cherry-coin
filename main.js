@@ -4,8 +4,10 @@ const cherryCoin = new Blockchain();
 
 const block1 = new Block(Date.now(), {amount: 20});
 
+console.log("Mining block 1...");
 cherryCoin.addNewBlock(block1);
 
+console.log("Mining block 2...");
 const block2 = new Block(Date.now(), {amount: 13});
 
 cherryCoin.addNewBlock(block2);
